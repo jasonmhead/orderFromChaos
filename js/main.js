@@ -1,5 +1,6 @@
 function formWord(){
     $('.word-btn').text('Working...');
+    console.log('Working...');
 
     var word = $('.wordFld').val();
     word = word.toLowerCase();
@@ -11,15 +12,16 @@ function formWord(){
     
     var possible = "abcdefghijklmnopqrstuvwxyz";
     var count = 0;
-    var limit = 50001; // make sure it has a stopping point
+    var limit = 1000001; // make sure it has a stopping point
     var genWord = '';
+    $('.final-result').html('Working...');
     
     while(word != genWord && count < limit){
         genWord = makeword(wordlen);  
         count++;
         
         if(word == genWord){
-            $('.final-result').html('It took '+count+' tries to make the word "'+word+'"');
+            $('.final-result').html('It took '+count+' random word generations to make the word "'+word+'"');
             $('.words-gened').prepend("<b>"+genWord+"</b>, ");
             $('.word-btn').text('Form Word Randomly');
         }else{

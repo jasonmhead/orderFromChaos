@@ -25,6 +25,10 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/vendor/jquery-1.11.0.min.js"><\/script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -37,20 +41,20 @@
       <div class="container">
         <h2>Order from Chaos</h2>
         <p>A basic rudimentary random word formation experiment</p>
-        <p><input type="text" class="text" class="wordFld"><label class="label">Word(s) to form - try really short ones at first, longer ones will take time, and sentances aren't feasible</label></p>
-        <p><a class="btn btn-primary btn-lg word-btn" role="button" onclick="formWord()">Form Word Randomly</a></p>
+        <p><input type="text" class="text wordFld"><label class="label">Word(s) to form - try really short ones at first, longer ones will take time, and sentances aren't feasible</label></p>
+        <p><button class="btn btn-primary btn-lg word-btn" role="button" onclick="formWord()">Form Word Randomly</button></p>
       </div>
     </div>
     
+    <h2>
     <div class="col-md-6 result-area final-result">
         
     </div>
+    </h2>
 
-     <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+     <!-- /container -->        
+        
 
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
+        
     </body>
 </html>
